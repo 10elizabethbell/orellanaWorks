@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T01:54:35.825966+00:00",
+  "title": "Design System: Orellana Works LLC",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Logo Forest",
+        "canonical": "#173a26",
+        "tonalRamp": [
+          "oklch(15% 0.055 156.3)",
+          "oklch(26% 0.055 156.3)",
+          "oklch(37% 0.055 156.3)",
+          "oklch(48% 0.055 156.3)",
+          "oklch(59% 0.055 156.3)",
+          "oklch(70% 0.055 156.3)",
+          "oklch(82% 0.055 156.3)",
+          "oklch(95% 0.055 156.3)"
+        ]
+      },
+      "forest-2": {
+        "role": "neutral",
+        "displayName": "Forest 2",
+        "canonical": "#1f4a31",
+        "tonalRamp": [
+          "oklch(15% 0.065 155.8)",
+          "oklch(26% 0.065 155.8)",
+          "oklch(37% 0.065 155.8)",
+          "oklch(48% 0.065 155.8)",
+          "oklch(59% 0.065 155.8)",
+          "oklch(70% 0.065 155.8)",
+          "oklch(82% 0.065 155.8)",
+          "oklch(95% 0.065 155.8)"
+        ]
+      },
+      "forest-3": {
+        "role": "neutral",
+        "displayName": "Forest 3",
+        "canonical": "#26583a",
+        "tonalRamp": [
+          "oklch(15% 0.074 155.0)",
+          "oklch(26% 0.074 155.0)",
+          "oklch(37% 0.074 155.0)",
+          "oklch(48% 0.074 155.0)",
+          "oklch(59% 0.074 155.0)",
+          "oklch(70% 0.074 155.0)",
+          "oklch(82% 0.074 155.0)",
+          "oklch(95% 0.074 155.0)"
+        ]
+      },
+      "lawn": {
+        "role": "tertiary",
+        "displayName": "Mown Lawn",
+        "canonical": "#4f8a39",
+        "tonalRamp": [
+          "oklch(15% 0.130 138.0)",
+          "oklch(26% 0.130 138.0)",
+          "oklch(37% 0.130 138.0)",
+          "oklch(48% 0.130 138.0)",
+          "oklch(59% 0.130 138.0)",
+          "oklch(70% 0.130 138.0)",
+          "oklch(82% 0.130 138.0)",
+          "oklch(95% 0.130 138.0)"
+        ]
+      },
+      "lawn-top": {
+        "role": "tertiary",
+        "displayName": "Sunlit Turf",
+        "canonical": "#5a9741",
+        "tonalRamp": [
+          "oklch(15% 0.135 137.5)",
+          "oklch(26% 0.135 137.5)",
+          "oklch(37% 0.135 137.5)",
+          "oklch(48% 0.135 137.5)",
+          "oklch(59% 0.135 137.5)",
+          "oklch(70% 0.135 137.5)",
+          "oklch(82% 0.135 137.5)",
+          "oklch(95% 0.135 137.5)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Sage Paper",
+        "canonical": "#eef3e7",
+        "tonalRamp": [
+          "oklch(15% 0.017 125.3)",
+          "oklch(26% 0.017 125.3)",
+          "oklch(37% 0.017 125.3)",
+          "oklch(48% 0.017 125.3)",
+          "oklch(59% 0.017 125.3)",
+          "oklch(70% 0.017 125.3)",
+          "oklch(82% 0.017 125.3)",
+          "oklch(95% 0.017 125.3)"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Pale Sage",
+        "canonical": "#dfe8d4",
+        "tonalRamp": [
+          "oklch(15% 0.028 126.8)",
+          "oklch(26% 0.028 126.8)",
+          "oklch(37% 0.028 126.8)",
+          "oklch(48% 0.028 126.8)",
+          "oklch(59% 0.028 126.8)",
+          "oklch(70% 0.028 126.8)",
+          "oklch(82% 0.028 126.8)",
+          "oklch(95% 0.028 126.8)"
+        ]
+      },
+      "rule-line": {
+        "role": "neutral",
+        "displayName": "Field Line",
+        "canonical": "#cad6bf",
+        "tonalRamp": [
+          "oklch(15% 0.034 129.7)",
+          "oklch(26% 0.034 129.7)",
+          "oklch(37% 0.034 129.7)",
+          "oklch(48% 0.034 129.7)",
+          "oklch(59% 0.034 129.7)",
+          "oklch(70% 0.034 129.7)",
+          "oklch(82% 0.034 129.7)",
+          "oklch(95% 0.034 129.7)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Deep Ink Green",
+        "canonical": "#17301f",
+        "tonalRamp": [
+          "oklch(15% 0.044 153.0)",
+          "oklch(26% 0.044 153.0)",
+          "oklch(37% 0.044 153.0)",
+          "oklch(48% 0.044 153.0)",
+          "oklch(59% 0.044 153.0)",
+          "oklch(70% 0.044 153.0)",
+          "oklch(82% 0.044 153.0)",
+          "oklch(95% 0.044 153.0)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Moss Ink",
+        "canonical": "#44584a",
+        "tonalRamp": [
+          "oklch(15% 0.034 154.3)",
+          "oklch(26% 0.034 154.3)",
+          "oklch(37% 0.034 154.3)",
+          "oklch(48% 0.034 154.3)",
+          "oklch(59% 0.034 154.3)",
+          "oklch(70% 0.034 154.3)",
+          "oklch(82% 0.034 154.3)",
+          "oklch(95% 0.034 154.3)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Logo Cream",
+        "canonical": "#f6f0e1",
+        "tonalRamp": [
+          "oklch(15% 0.021 88.7)",
+          "oklch(26% 0.021 88.7)",
+          "oklch(37% 0.021 88.7)",
+          "oklch(48% 0.021 88.7)",
+          "oklch(59% 0.021 88.7)",
+          "oklch(70% 0.021 88.7)",
+          "oklch(82% 0.021 88.7)",
+          "oklch(95% 0.021 88.7)"
+        ]
+      },
+      "cream-soft": {
+        "role": "neutral",
+        "displayName": "Sage Cream",
+        "canonical": "#d3e2c6",
+        "tonalRamp": [
+          "oklch(15% 0.041 130.3)",
+          "oklch(26% 0.041 130.3)",
+          "oklch(37% 0.041 130.3)",
+          "oklch(48% 0.041 130.3)",
+          "oklch(59% 0.041 130.3)",
+          "oklch(70% 0.041 130.3)",
+          "oklch(82% 0.041 130.3)",
+          "oklch(95% 0.041 130.3)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Flyer Gold",
+        "canonical": "#e2a93b",
+        "tonalRamp": [
+          "oklch(15% 0.139 80.0)",
+          "oklch(26% 0.139 80.0)",
+          "oklch(37% 0.139 80.0)",
+          "oklch(48% 0.139 80.0)",
+          "oklch(59% 0.139 80.0)",
+          "oklch(70% 0.139 80.0)",
+          "oklch(82% 0.139 80.0)",
+          "oklch(95% 0.139 80.0)"
+        ]
+      },
+      "gold-hover": {
+        "role": "primary",
+        "displayName": "Warm Gold",
+        "canonical": "#efbd57",
+        "tonalRamp": [
+          "oklch(15% 0.132 82.8)",
+          "oklch(26% 0.132 82.8)",
+          "oklch(37% 0.132 82.8)",
+          "oklch(48% 0.132 82.8)",
+          "oklch(59% 0.132 82.8)",
+          "oklch(70% 0.132 82.8)",
+          "oklch(82% 0.132 82.8)",
+          "oklch(95% 0.132 82.8)"
+        ]
+      },
+      "leaf": {
+        "role": "secondary",
+        "displayName": "Raked Rust",
+        "canonical": "#c8501e",
+        "tonalRamp": [
+          "oklch(15% 0.160 40.4)",
+          "oklch(26% 0.164 40.4)",
+          "oklch(37% 0.164 40.4)",
+          "oklch(48% 0.164 40.4)",
+          "oklch(59% 0.164 40.4)",
+          "oklch(70% 0.164 40.4)",
+          "oklch(82% 0.164 40.4)",
+          "oklch(95% 0.160 40.4)"
+        ]
+      },
+      "lime": {
+        "role": "secondary",
+        "displayName": "Fresh Lime",
+        "canonical": "#a6d96a",
+        "tonalRamp": [
+          "oklch(15% 0.151 129.6)",
+          "oklch(26% 0.151 129.6)",
+          "oklch(37% 0.151 129.6)",
+          "oklch(48% 0.151 129.6)",
+          "oklch(59% 0.151 129.6)",
+          "oklch(70% 0.151 129.6)",
+          "oklch(82% 0.151 129.6)",
+          "oklch(95% 0.151 129.6)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero slogan only; 900 uppercase. At 1024px+ clamp(3.2rem, 4.2vw, 4.75rem)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; closing slogan uses clamp(2.2rem, 9.5vw, 4.2rem)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service group and step titles; 22px uppercase."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Service rows, card label, area line; hero promise at weight 400 / 1.45."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default sentence-case copy, 44-46ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, form labels, header phone number."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Perk line, form helper and errors, footer fine print."
+      }
+    },
+    "shadows": [
+      {
+        "name": "leaf-cast",
+        "value": "rgba(20,40,16,.42) sprite offset by leaf height",
+        "purpose": "Canvas-only shadow under airborne leaves. UI components have no shadows."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "background-color/color/border-color .2s (chips and fields .15s)",
+        "purpose": "All hover/focus state changes."
+      },
+      {
+        "name": "press",
+        "value": "translateY(1px), .15s",
+        "purpose": "Button and card press; off under reduced motion."
+      },
+      {
+        "name": "shared-loop",
+        "value": "one requestAnimationFrame, dt clamped 1/240-1/30s",
+        "purpose": "Drives both lawns and all section edges; offscreen pieces pause via IntersectionObserver."
+      },
+      {
+        "name": "turf-edge",
+        "value": "TURF_SPEED 1.1",
+        "purpose": "Rolling ground line into paper bands."
+      },
+      {
+        "name": "grass-edge",
+        "value": "GRASS_SPEED 1.6, BLADE_GAP 7px",
+        "purpose": "Swaying blades into forest bands and atop lawns."
+      },
+      {
+        "name": "lawn-cfg",
+        "value": "LEAF_PX 16/22, COVER 2.6, MAX_LEAVES 3400, BLOW_R 62/88, BLOW_FORCE 2300, CARRY 0.9, LIFT 260, GRAVITY 520, GROUND_DRAG 7.5, AIR_DRAG 0.9, REFILL_PER_SEC 12, FALL_SPEED 46, GUST_EVERY 5-9s, AUTOPLAY_IDLE 5s, DPR_MAX 1.5",
+        "purpose": "Leaf lawn tunables."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "still frame",
+        "purpose": "Lawns and edges paint once, loop never starts, hint hidden, smooth scroll and press off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "<700px"
+      },
+      {
+        "name": "tablet",
+        "value": "700px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Pill Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action per view: free estimate, text my request.",
+      "html": "<a class=\"ds-btn-gold\" href=\"#\">Get a free estimate</a>",
+      "css": ".ds-btn-gold{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:999px;font:800 17px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;text-decoration:none;background:#e2a93b;color:#173a26;border:2px solid #e2a93b;transition:background-color .2s,border-color .2s,transform .15s}.ds-btn-gold:hover{background:#efbd57;border-color:#efbd57}.ds-btn-gold:focus-visible{outline:3px solid #e2a93b;outline-offset:3px}.ds-btn-gold:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Logo wordmark left, tap-to-call number top-right, on forest.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>ORELLANA</b><small>WORKS LLC</small></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\"><path d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z\"/></svg>908-356-2628</a></div>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;background:#173a26;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-brand{color:#f6f0e1;text-decoration:none;min-height:44px}.ds-brand b{display:block;font-size:1.15rem;font-weight:900;letter-spacing:-.01em;line-height:1}.ds-brand small{display:block;font-size:.72rem;font-weight:800;letter-spacing:.16em;color:#a6d96a;margin-top:3px}.ds-tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;color:#f6f0e1;font-weight:800;text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel svg{fill:#e2a93b}.ds-tel:hover{color:#e2a93b}.ds-tel:focus-visible,.ds-brand:focus-visible{outline:3px solid #e2a93b;outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Full-width service link; the circular arrow is the only hover cue.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\">Fall cleanups<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path d=\"M5 12h13M13 6l6 6-6 6\" stroke=\"currentColor\" stroke-width=\"2.4\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Concrete<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path d=\"M5 12h13M13 6l6 6-6 6\" stroke=\"currentColor\" stroke-width=\"2.4\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li></ul>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;background:#eef3e7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:6px 0;border-bottom:1px solid #cad6bf;text-decoration:none;color:#17301f;font-weight:800;font-size:22px}.ds-rows li:first-child .ds-row{border-top:1px solid #cad6bf}.ds-arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dfe8d4;color:#17301f;transition:background-color .2s,color .2s}.ds-row:hover,.ds-row:focus-visible{outline:none}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#c8501e;color:#fff}.ds-row:focus-visible .ds-arrow{outline:3px solid #c8501e;outline-offset:3px}"
+    },
+    {
+      "name": "Facebook Link Card",
+      "kind": "card",
+      "refersTo": "link-card",
+      "description": "The single card: forest on paper, arrow disc turns gold on hover.",
+      "html": "<a class=\"ds-fb\" href=\"#\"><span class=\"ds-ic\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\"><path fill=\"#fff\" d=\"M14 8h3V4h-3a5 5 0 0 0-5 5v2H7v4h2v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1z\"/></svg></span><span class=\"ds-lbl\">See our work on Facebook.</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path d=\"M5 12h13M13 6l6 6-6 6\" stroke=\"currentColor\" stroke-width=\"2.4\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a>",
+      "css": ".ds-fb{display:flex;align-items:center;gap:16px;padding:18px 20px;min-height:76px;border-radius:14px;background:#173a26;color:#f6f0e1;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;transition:transform .2s}.ds-ic{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1877f2}.ds-lbl{font-weight:800;font-size:22px;line-height:1.25}.ds-arrow{margin-left:auto;flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#26583a;color:#f6f0e1;transition:background-color .2s,color .2s}.ds-fb:hover .ds-arrow{background:#e2a93b;color:#173a26}.ds-fb:focus-visible{outline:3px solid #e2a93b;outline-offset:3px}.ds-fb:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Step List",
+      "kind": "custom",
+      "refersTo": "step-badge",
+      "description": "Counter-numbered steps with gold numerals in forest-3 discs.",
+      "html": "<ol class=\"ds-steps\"><li><h3>Tell us about the job</h3><p>Send the short form below.</p></li><li><h3>Get a free estimate</h3><p>A straight price before any work starts.</p></li></ol>",
+      "css": ".ds-steps{list-style:none;margin:0;padding:24px;display:grid;gap:26px;counter-reset:s;background:#173a26;color:#f6f0e1;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;counter-increment:s}.ds-steps li::before{content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#26583a;color:#e2a93b;font-weight:900;font-size:1.4rem}.ds-steps h3{margin:0;font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;align-self:center}.ds-steps p{margin:0;grid-column:2;color:#d3e2c6;font-size:17px;line-height:1.55}"
+    },
+    {
+      "name": "Service Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox chip on forest; lime border on hover/focus, cream when checked.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Fall cleanup</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Concrete</span></label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px;padding:16px;background:#173a26;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-chip{position:relative}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.ds-chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border-radius:999px;border:2px solid #3d6b4c;background:#1f4a31;color:#f6f0e1;font-weight:700;cursor:pointer;transition:background-color .15s,border-color .15s,color .15s}.ds-chip:hover span,.ds-chip input:focus-visible+span{border-color:#a6d96a}.ds-chip input:focus-visible+span{outline:2px solid #a6d96a;outline-offset:2px}.ds-chip input:checked+span{background:#f6f0e1;color:#173a26;border-color:#f6f0e1}.ds-chip:hover input:checked+span{border-color:#a6d96a}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Cream field on forest; lime border on hover, lime outline on focus.",
+      "html": "<div class=\"ds-form\"><label class=\"ds-f\">Your name<input type=\"text\" placeholder=\"First and last name\"></label></div>",
+      "css": ".ds-form{padding:16px;background:#173a26;color:#f6f0e1;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-f{display:grid;gap:8px;font-weight:800}.ds-f input{width:100%;box-sizing:border-box;font:500 16px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#17301f;background:#f6f0e1;border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:52px;transition:border-color .15s}.ds-f input::placeholder{color:#5a685c}.ds-f input:hover,.ds-f input:focus{outline:none;border-color:#a6d96a}.ds-f input:focus{outline:2px solid #a6d96a;outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Fall Flyer, Made Real",
+    "overview": "The system is the crew's own autumn flyer turned into a yard you can touch. Forest green carries the ground of every dark band, a pale sage paper carries the light bands, cream and gold come straight off the logo's trim, and a rust-to-amber leaf palette lives only on the lawn. The page alternates dark forest and pale paper bands, and every seam between them is a living edge: rolling turf or swaying grass blades, never a straight rule.\n\nType is loud and plain. A system sans at 900 weight, uppercase and tightly set, does all the shouting; everything else is sentence-case, at a size meant to be read with one thumb on a phone. Density is low and the targets are big (44px minimum, 56px for the primary action). Ornament is limited to the lawn, the leaves and the grass; there are no photos, gradients-as-decoration or drop shadows on UI.\n\nInteraction has one physical signature: a striped, mowed lawn under fallen maple, oak and elm leaves that a finger or mouse blows clear. Its motion is shared with the section edges through one animation loop that pauses anything offscreen and freezes to a still frame under reduced motion.",
+    "keyCharacteristics": [
+      "Forest / paper band alternation, joined by animated turf and grass edges.",
+      "900-weight uppercase system-sans display; plain sentence-case body at 17px.",
+      "One gold pill call to action per view; lime is the interactive-state color on dark ground.",
+      "The leaf lawn canvas is the signature component and the only place the autumn palette appears.",
+      "Phone first: single column under 700px, the hero splits only at 1024px.",
+      "Never black: the darkest values are greens."
+    ],
+    "rules": [
+      {
+        "name": "The Never Black Rule",
+        "body": "No surface or text is black or neutral gray. The darkest value is ink (#17301f); shadows on the lawn are tinted green.",
+        "section": "colors"
+      },
+      {
+        "name": "The Leaves Stay On The Lawn Rule",
+        "body": "The eight autumn leaf colors live in the canvas CFG.COLORS array. In the UI, only Raked Rust appears, and only as the hover/focus state of an arrow.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lime Means Live Rule",
+        "body": "On forest ground, lime is the hover and focus signal for every form control. Gold stays the fill of the action itself.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Body Steps Rule",
+        "body": "Running text uses only 14, 17 and 22px. Anything larger is uppercase 900 display.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shout Once Rule",
+        "body": "Uppercase belongs to 900-weight headings and the logo wordmark. Body, labels, buttons and chips are sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat UI, Deep Lawn Rule",
+        "body": "Shadows are physics, not chrome. They exist only under leaves in the air.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** alternate forest and paper bands and join every pair with a turf edge (into paper) or grass edge (into forest or a lawn), pulled up 45px.",
+      "**Do** set every heading in the system sans at 900, uppercase, -0.02em, line-height 0.95.",
+      "**Do** keep running text to 14, 17 and 22px, sentence case.",
+      "**Do** use the gold pill (56px, forest text) for the one primary action in a view.",
+      "**Do** use lime for hover and focus on forest-ground controls, and the 3px gold ring for focus elsewhere.",
+      "**Do** give every tap target at least 44px.",
+      "**Do** run any new animation off the shared loop, pause it offscreen, and give it a reduced-motion still frame.",
+      "**Do** tune the lawn through CFG rather than editing the physics."
+    ],
+    "donts": [
+      "**Don't** use black or neutral gray anywhere; the darkest value is ink green.",
+      "**Don't** put drop shadows on UI components; shadows exist only under airborne leaves.",
+      "**Don't** use the autumn leaf colors as UI colors; rust is only the row-arrow state.",
+      "**Don't** use a straight rule or hard edge between bands.",
+      "**Don't** add hover backgrounds or shadows to service rows; the arrow is the cue.",
+      "**Don't** start a second requestAnimationFrame loop.",
+      "**Don't** add a sticky header or bottom call bar; the phone number lives top-right on the first screen."
+    ]
+  }
+}
