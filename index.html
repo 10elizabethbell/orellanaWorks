@@ -50,7 +50,7 @@ p{margin:0}
 
 /* ---------- hero ---------- */
 .hero{position:relative;background:var(--forest);color:var(--cream);display:flex;flex-direction:column;min-height:min(100svh,940px)}
-.hero-copy{padding:18px var(--gutter) 18px;max-width:var(--max);margin:0 auto;width:100%}
+.hero-copy{padding:18px var(--gutter) 46px;max-width:var(--max);margin:0 auto;width:100%}
 .hero h1{font-size:clamp(2.55rem,11.2vw,5.6rem);max-width:11ch}
 .promise{margin-top:16px;font-size:1.375rem;line-height:1.45;color:var(--cream-soft);max-width:34ch}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:800 1.0625rem/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s}
@@ -71,6 +71,7 @@ p{margin:0}
 /* ---------- dividers ---------- */
 .edge{display:block;width:100%;height:46px;margin-top:-45px;position:relative;z-index:2;pointer-events:none}
 .edge path.fill{stroke:none}
+.edge.lawn-top{position:absolute;left:0;top:-44px;margin:0;z-index:1}
 .edge path.line{fill:none;stroke-width:2.5;stroke-linecap:round}
 
 /* ---------- sections ---------- */
@@ -81,7 +82,7 @@ section{position:relative}
 
 /* services */
 .groups{display:grid;gap:34px;margin-top:28px}
-.group h3{font-size:.875rem;letter-spacing:.14em;color:var(--leaf-ink);margin-bottom:6px}
+.group h3{font-size:1.375rem;letter-spacing:-.01em;color:var(--ink);margin-bottom:10px}
 .rows{list-style:none;margin:0;padding:0}
 .row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:6px 0;border-bottom:1px solid #cad6bf;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.375rem}
 .rows li:first-child .row{border-top:1px solid #cad6bf}
@@ -104,7 +105,6 @@ section{position:relative}
 /* work + area */
 .split{display:grid;gap:44px}
 .fb{display:flex;align-items:center;gap:16px;margin-top:24px;padding:18px 20px;min-height:76px;border-radius:var(--radius);background:var(--forest);color:var(--cream);text-decoration:none;transition:background-color .2s,transform .2s}
-.fb:hover{background:var(--forest-3)}
 .fb:active{transform:translateY(1px)}
 .fb .ic{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1877f2}
 .fb .ic svg{width:22px;height:22px;fill:#fff}
@@ -116,6 +116,7 @@ section{position:relative}
 
 /* estimate form */
 form{margin-top:28px;display:grid;gap:22px;max-width:640px}
+.pair{display:grid;gap:22px}
 label.f{display:grid;gap:8px;font-weight:800}
 label.f em{font-style:normal;font-weight:500;color:var(--cream-soft)}
 input[type=text],input[type=tel],textarea{width:100%;font:500 1rem/1.4 var(--sans);color:var(--ink);background:var(--cream);border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:52px;transition:border-color .15s,box-shadow .15s}
@@ -148,10 +149,10 @@ legend{font-weight:800;padding:0;margin-bottom:10px}
 .sent.on{display:block}
 
 /* close + footer */
-.close{background:var(--forest);color:var(--cream);display:flex;flex-direction:column}
-.close .wrap{padding-top:58px;padding-bottom:26px;width:100%}
+.close{background:var(--paper);color:var(--ink);display:flex;flex-direction:column}
+.close .wrap{padding-top:58px;padding-bottom:78px;width:100%}
 .close h2{font-size:clamp(2.2rem,9.5vw,4.2rem);max-width:12ch}
-.close p{margin-top:14px;color:var(--cream-soft)}
+.close p{margin-top:14px;color:var(--ink-soft)}
 .close .lawn{min-height:220px;flex:none;height:230px}
 #lawn-close canvas{touch-action:pan-y}
 footer{background:var(--forest-2);color:var(--cream);padding:30px 0 calc(34px + env(safe-area-inset-bottom))}
@@ -182,10 +183,10 @@ footer small{color:var(--cream-soft);font-size:.875rem}
   .hero-copy{align-self:center;max-width:none;margin:0;padding:24px 56px 80px max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))}
   .hero h1{font-size:clamp(3.2rem,4.2vw,4.75rem);max-width:none}
   .hero .lawn{grid-row:2;grid-column:2;min-height:520px;border-top-left-radius:36px;overflow:hidden}
+  .hero .lawn-top{display:none}
   .close .lawn{height:320px}
-  .estimate .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:0 72px;align-items:start}
-  .estimate h2{grid-column:1;position:sticky;top:40px}
-  .estimate form{grid-column:2;grid-row:1;margin-top:0}
+  .estimate form{max-width:760px}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:active,.fb:active{transform:none}}
 </style>
@@ -197,6 +198,7 @@ THESIS: Orellana Works' own fall flyer, made real: a forest-green yard where the
 OWN-WORLD: their logo's forest green, cream and gold trim; a mowed, striped lawn; maple, oak and elm leaves in rust, amber, gold and red. Never black.
 STORY: their slogan "Your property, our priority." -> sweep the leaves off a real lawn -> what we do (yard / build) -> how it works -> our work on Facebook, where we work -> free estimate by text -> "Quality work, affordable prices." on a second lawn.
 FIRST VIEWPORT (phone): header with logo mark and the tap-to-call number top-right; heavy uppercase slogan; one promise line; one gold "Get a free estimate" button; first-time discount line; the leaf-covered lawn starts right under it, already being blown clear.
+SEED: none (unattended pitch-site build; no concept roll or comp round).
 FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows with a single arrow cue; swaying grass/turf edges between sections; one shared animation loop.
 -->
 <header class="hero" id="top">
@@ -222,7 +224,7 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
     <p class="perk">New customers: ask about our <strong>first-time discount</strong>.</p>
     <p class="hint" id="hint"><span class="finger">Sweep your finger across the leaves</span><span class="mouse">Run your mouse over the leaves</span></p>
   </div>
-  <div class="lawn" id="lawn-hero"><canvas aria-label="A lawn covered in fallen leaves. Move across it to blow them away." role="img"></canvas></div>
+  <div class="lawn" id="lawn-hero"><svg class="edge lawn-top" data-edge="grass" data-fill="#5a9741" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/></svg><canvas aria-label="A lawn covered in fallen leaves. Move across it to blow them away." role="img"></canvas></div>
 </header>
 
 <main>
@@ -274,7 +276,7 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
       <h2 id="work-h">See our work</h2>
       <a class="fb" href="https://facebook.com/profile.php?id=61577158443400" rel="noopener">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a5 5 0 0 0-5 5v2H7v4h2v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg></span>
-        <span>Click to see more of our work.</span>
+        <span>See our work on Facebook.</span>
         <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </div>
@@ -291,10 +293,16 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
   <div class="wrap">
     <h2 id="estimate-h">Get a free estimate</h2>
     <form class="form" id="quote" novalidate>
+      <div class="pair">
       <label class="f" id="f-name">Your name
         <input type="text" name="name" autocomplete="name" placeholder="First and last name">
         <span class="err" aria-live="polite">Please add your name so we know who's texting.</span>
       </label>
+      <label class="f" id="f-where">Town or street
+        <input type="text" name="where" autocomplete="address-line1" placeholder="e.g. Bound Brook, or your street">
+        <span class="err" aria-live="polite">Add your town so we know where the job is.</span>
+      </label>
+      </div>
       <fieldset id="f-svc">
         <legend>What do you need?</legend>
         <div class="chips">
@@ -311,10 +319,6 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
         </div>
         <span class="err" aria-live="polite">Pick at least one so we know what to look at.</span>
       </fieldset>
-      <label class="f" id="f-where">Town or street
-        <input type="text" name="where" autocomplete="address-line1" placeholder="e.g. Bound Brook, or your street">
-        <span class="err" aria-live="polite">Add your town so we know where the job is.</span>
-      </label>
       <label class="f"><span>Details <em>(optional)</em></span>
         <textarea name="notes" placeholder="Size of the yard, what you have in mind, best time to come by"></textarea>
       </label>
@@ -326,15 +330,16 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
   </div>
 </section>
 
+<svg class="edge" data-edge="turf" data-fill="#eef3e7" data-line="#cad6bf" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/><path class="line"/></svg>
 <section class="close" aria-labelledby="close-h">
   <div class="wrap">
     <h2 id="close-h">Quality work, affordable prices.</h2>
     <p>Orellana Works LLC · Landscaping, construction, concrete.</p>
   </div>
-  <div class="lawn" id="lawn-close"><canvas aria-label="Another lawn of fallen leaves to clear." role="img"></canvas></div>
+  <div class="lawn" id="lawn-close"><svg class="edge lawn-top" data-edge="grass" data-fill="#5a9741" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/></svg><canvas aria-label="Another lawn of fallen leaves to clear." role="img"></canvas></div>
 </section>
 </main>
-
+<svg class="edge" data-edge="turf" data-fill="#1f4a31" data-line="#2c5b3e" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/><path class="line"/></svg>
 <footer>
   <div class="wrap">
     <b>ORELLANA WORKS LLC</b>

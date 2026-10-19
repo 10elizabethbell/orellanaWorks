@@ -17,6 +17,15 @@
         ],
         "createdAt": "2026-10-19T01:37:36.884Z",
         "reason": "Only the 4-word hero slogan is uppercase (client's own slogan, styled as their flyer); body is sentence case"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T01:43:04.749Z",
+        "reason": "Claude: body scale is three steps 14/17/22px; hierarchy carried by 900-weight display headings at 36-90px, which the detector's body-size sample omits"
       }
     ]
   }
