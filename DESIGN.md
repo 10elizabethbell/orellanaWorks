@@ -18,10 +18,27 @@ colors:
   gold-hover: "#efbd57"
   leaf: "#c8501e"
   lime: "#a6d96a"
+  lawn-shade: "#4a8236"
+  lawn-deep: "#3f7430"
+  placeholder: "#5a685c"
+  error-text: "#ffc9b5"
+  error-edge: "#ff9b7a"
 typography:
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
     fontSize: "clamp(2.55rem, 11.2vw, 5.6rem)"
+    fontWeight: 900
+    lineHeight: 0.95
+    letterSpacing: "-0.02em"
+  display-wide:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(3.2rem, 4.2vw, 4.75rem)"
+    fontWeight: 900
+    lineHeight: 0.95
+    letterSpacing: "-0.02em"
+  closing:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(2.2rem, 9.5vw, 4.2rem)"
     fontWeight: 900
     lineHeight: 0.95
     letterSpacing: "-0.02em"
@@ -57,6 +74,17 @@ typography:
     fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.55
+  wordmark:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.15rem"
+    fontWeight: 900
+    lineHeight: 1
+  wordmark-sub:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "0.72rem"
+    fontWeight: 800
+    lineHeight: 1
+    letterSpacing: "0.16em"
 rounded:
   field: "12px"
   card: "14px"

@@ -44,7 +44,7 @@ p{margin:0}
 .brand svg{width:46px;height:auto;flex:none}
 .brand b{display:block;font-size:1.15rem;font-weight:900;letter-spacing:-.01em;line-height:1}
 .brand small{display:block;font-size:.72rem;font-weight:800;letter-spacing:.16em;color:var(--lime);margin-top:3px}
-.tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;color:var(--cream);font-weight:800;font-size:1rem;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;color:var(--cream);font-weight:800;font-size:1.0625rem;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tel svg{width:17px;height:17px;fill:var(--gold)}
 .tel:hover{color:var(--gold)}
 
@@ -89,7 +89,7 @@ section{position:relative}
 .arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--paper-2);color:var(--ink);transition:background-color .2s,color .2s}
 .arrow svg{width:20px;height:20px}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
-.row:hover .arrow,.row:focus-visible .arrow{background:var(--leaf);color:#fff}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--leaf);color:var(--cream)}
 .row:focus-visible .arrow{outline:3px solid var(--leaf);outline-offset:3px}
 .more{margin-top:26px;color:var(--ink-soft)}
 .more a{font-weight:800;color:var(--ink)}
@@ -107,7 +107,7 @@ section{position:relative}
 .fb{display:flex;align-items:center;gap:16px;margin-top:24px;padding:18px 20px;min-height:76px;border-radius:var(--radius);background:var(--forest);color:var(--cream);text-decoration:none;transition:background-color .2s,transform .2s}
 .fb:active{transform:translateY(1px)}
 .fb .ic{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1877f2}
-.fb .ic svg{width:22px;height:22px;fill:#fff}
+.fb .ic svg{width:22px;height:22px;fill:var(--cream)}
 .fb span{font-weight:800;font-size:1.375rem;line-height:1.25}
 .fb .arrow{margin-left:auto;background:var(--forest-3);color:var(--cream)}
 .fb:hover .arrow{background:var(--gold);color:var(--forest)}
@@ -135,7 +135,7 @@ legend{font-weight:800;padding:0;margin-bottom:10px}
 .chip input:checked+span{background:var(--cream);color:var(--forest);border-color:var(--cream)}
 .chip:hover input:checked+span{border-color:var(--lime)}
 .check{display:flex;align-items:center;gap:12px;min-height:44px;font-weight:600;cursor:pointer}
-.check input{width:24px;height:24px;margin:0;flex:none;accent-color:var(--gold);cursor:pointer;border-radius:6px}
+.check input{width:24px;height:24px;margin:0;flex:none;accent-color:var(--gold);cursor:pointer}
 .check:hover input,.check input:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
 .err{display:none;color:#ffc9b5;font-weight:700;font-size:.875rem}
 .bad .err{display:block}
