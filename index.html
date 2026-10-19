@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orellana Works LLC · Landscaping, Construction &amp; Concrete · Bound Brook, NJ</title>
+<meta name="description" content="Landscaping, fall cleanups, tree trimming, concrete, patios, decks and remodeling in Bound Brook, NJ and surrounding areas. Free estimates. Call 908-356-2628.">
+<meta name="theme-color" content="#173a26">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Orellana Works LLC · Your property, our priority.">
+<meta property="og:description" content="Landscaping, fall cleanups, concrete and remodeling in Bound Brook, NJ. Free estimates.">
+<meta property="og:url" content="https://10elizabethbell.github.io/orellanaWorks/">
+<meta property="og:image" content="https://10elizabethbell.github.io/orellanaWorks/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23173a26'/%3E%3Cpath d='M6 44 32 18l26 26h-8L32 26 14 44z' fill='%23f6f0e1'/%3E%3Cpath d='M27 33h4v4h-4zm6 0h4v4h-4zm-6 6h4v4h-4zm6 0h4v4h-4z' fill='%23f6f0e1'/%3E%3Cpath d='M8 52q24-9 48 0-24-5-48 0z' fill='%235fae4e'/%3E%3Cpath d='M44 18c4-8 11-9 14-9 0 6-4 13-13 12z' fill='%23e2a93b'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --forest:#173a26; --forest-2:#1f4a31; --forest-3:#26583a;
+  --lawn:#4f8a39; --paper:#eef3e7; --paper-2:#dfe8d4;
+  --ink:#17301f; --ink-soft:#44584a;
+  --cream:#f6f0e1; --cream-soft:#d3e2c6;
+  --gold:#e2a93b; --gold-deep:#c98d1f; --leaf:#c8501e; --leaf-ink:#a33e13; --lime:#a6d96a;
+  --radius:14px; --gutter:20px; --max:1120px;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth;scrollbar-color:var(--forest-3) var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.55 var(--sans);caret-color:var(--gold-deep)}
+::selection{background:var(--gold);color:var(--forest)}
+img,svg,canvas{display:block}
+a{color:inherit;text-underline-offset:.2em}
+h1,h2,h3{margin:0;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* ---------- header ---------- */
+.top{position:relative;z-index:3;width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gutter);max-width:var(--max);margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--cream);min-height:44px}
+.brand svg{width:46px;height:auto;flex:none}
+.brand b{display:block;font-size:1.15rem;font-weight:900;letter-spacing:-.01em;line-height:1}
+.brand small{display:block;font-size:.72rem;font-weight:800;letter-spacing:.16em;color:var(--lime);margin-top:3px}
+.tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;color:var(--cream);font-weight:800;font-size:1rem;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tel svg{width:17px;height:17px;fill:var(--gold)}
+.tel:hover{color:var(--gold)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--forest);color:var(--cream);display:flex;flex-direction:column;min-height:min(100svh,940px)}
+.hero-copy{padding:18px var(--gutter) 18px;max-width:var(--max);margin:0 auto;width:100%}
+.hero h1{font-size:clamp(2.55rem,11.2vw,5.6rem);max-width:11ch}
+.promise{margin-top:16px;font-size:clamp(1.05rem,4.4vw,1.25rem);line-height:1.45;color:var(--cream-soft);max-width:34ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:800 1.05rem/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn-gold{background:var(--gold);color:var(--forest);border-color:var(--gold)}
+.btn-gold:hover{background:#efbd57;border-color:#efbd57}
+.hero .btn{margin-top:22px;width:100%}
+.perk{margin-top:12px;font-size:.95rem;color:var(--cream-soft)}
+.perk strong{color:var(--gold);font-weight:800}
+.hint{margin-top:18px;font-size:.85rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--lime);transition:opacity .6s}
+.hint .mouse{display:none}
+@media (hover:hover) and (pointer:fine){.hint .finger{display:none}.hint .mouse{display:inline}}
+.hint.gone{opacity:0}
+.lawn{position:relative;flex:1 1 auto;min-height:250px;background:var(--lawn) radial-gradient(120% 90% at 50% 0%,#5f9a45 0%,#4a8236 60%,#3f7430 100%)}
+.lawn canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:crosshair}
+
+/* ---------- dividers ---------- */
+.edge{display:block;width:100%;height:46px;margin-top:-45px;position:relative;z-index:2;pointer-events:none}
+.edge path.fill{stroke:none}
+.edge path.line{fill:none;stroke-width:2.5;stroke-linecap:round}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.band{padding:56px 0 64px}
+.band h2{font-size:clamp(2.1rem,9vw,3.6rem)}
+.dark{background:var(--forest);color:var(--cream)}
+
+/* services */
+.groups{display:grid;gap:34px;margin-top:28px}
+.group h3{font-size:.95rem;letter-spacing:.14em;color:var(--leaf-ink);margin-bottom:6px}
+.rows{list-style:none;margin:0;padding:0}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:6px 0;border-bottom:1px solid #cad6bf;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.2rem}
+.rows li:first-child .row{border-top:1px solid #cad6bf}
+.arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--paper-2);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:20px;height:20px}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--leaf);color:#fff}
+.row:focus-visible .arrow{outline:3px solid var(--leaf);outline-offset:3px}
+.more{margin-top:26px;color:var(--ink-soft)}
+.more a{font-weight:800;color:var(--ink)}
+
+/* how it works */
+.steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;counter-increment:s}
+.steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--forest-3);color:var(--gold);font-weight:900;font-size:1.4rem}
+.steps h3{font-size:1.35rem;align-self:end;line-height:1.05}
+.steps p{color:var(--cream-soft);max-width:44ch}
+
+/* work + area */
+.split{display:grid;gap:44px}
+.fb{display:flex;align-items:center;gap:16px;margin-top:24px;padding:18px 20px;min-height:76px;border-radius:var(--radius);background:var(--forest);color:var(--cream);text-decoration:none;box-shadow:0 10px 24px -12px rgba(23,58,38,.55);transition:background-color .2s,transform .2s}
+.fb:hover{background:var(--forest-3)}
+.fb:active{transform:translateY(1px)}
+.fb .ic{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1877f2}
+.fb .ic svg{width:22px;height:22px;fill:#fff}
+.fb span{font-weight:800;font-size:1.12rem;line-height:1.25}
+.fb .arrow{margin-left:auto;background:var(--forest-3);color:var(--cream)}
+.fb:hover .arrow{background:var(--gold);color:var(--forest)}
+.note{margin-top:14px;color:var(--ink-soft);max-width:46ch}
+.area-line{margin-top:22px;font-size:1.3rem;font-weight:800;line-height:1.3}
+
+/* estimate form */
+.estimate .lede{margin-top:14px;color:var(--cream-soft);max-width:44ch}
+.estimate .lede strong{color:var(--gold)}
+form{margin-top:28px;display:grid;gap:22px;max-width:640px}
+label.f{display:grid;gap:8px;font-weight:800}
+label.f em{font-style:normal;font-weight:500;color:var(--cream-soft)}
+input[type=text],input[type=tel],textarea{width:100%;font:500 1rem/1.4 var(--sans);color:var(--ink);background:var(--cream);border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:52px;transition:border-color .15s,box-shadow .15s}
+textarea{min-height:110px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#6b7a6d}
+input:hover,textarea:hover,input:focus,textarea:focus{outline:none;border-color:var(--lime)}
+input:focus,textarea:focus{outline:2px solid var(--lime);outline-offset:2px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:800;padding:0;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border-radius:999px;border:2px solid #3d6b4c;background:var(--forest-2);color:var(--cream);font-weight:700;cursor:pointer;user-select:none;transition:background-color .15s,border-color .15s,color .15s}
+.chip:hover span,.chip input:focus-visible+span{border-color:var(--lime)}
+.chip input:focus-visible+span{outline:2px solid var(--lime);outline-offset:2px}
+.chip input:checked+span{background:var(--cream);color:var(--forest);border-color:var(--cream)}
+.chip:hover input:checked+span{border-color:var(--lime)}
+.check{display:flex;align-items:flex-start;gap:12px;font-weight:600;cursor:pointer}
+.check input{width:24px;height:24px;margin:0;flex:none;accent-color:var(--gold);cursor:pointer;border-radius:6px}
+.check:hover input,.check input:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.err{display:none;color:#ffc9b5;font-weight:700;font-size:.95rem}
+.bad .err{display:block}
+.bad input,.bad .chips{border-radius:12px}
+.bad input{border-color:#ff9b7a}
+.form .btn{width:100%;border-color:var(--gold)}
+.form .btn:hover,.form .btn:focus-visible{border-color:var(--lime);outline:2px solid var(--lime);outline-offset:2px}
+.after{color:var(--cream-soft);font-size:.98rem}
+.after a{color:var(--cream);font-weight:800;white-space:nowrap}
+.sent{display:none;padding:14px 16px;border-radius:12px;background:var(--forest-2);color:var(--cream)}
+.sent.on{display:block}
+
+/* close + footer */
+.close{background:var(--forest);color:var(--cream);display:flex;flex-direction:column}
+.close .wrap{padding-top:58px;padding-bottom:26px;width:100%}
+.close h2{font-size:clamp(2.2rem,9.5vw,4.2rem);max-width:12ch}
+.close p{margin-top:14px;color:var(--cream-soft)}
+.close .lawn{min-height:220px;flex:none;height:230px}
+footer{background:var(--forest-2);color:var(--cream);padding:30px 0 calc(34px + env(safe-area-inset-bottom))}
+footer .wrap{display:grid;gap:14px}
+footer b{font-size:1.05rem;font-weight:900;letter-spacing:.02em}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 24px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--cream);font-weight:700}
+footer a:hover{color:var(--gold)}
+footer small{color:var(--cream-soft);font-size:.85rem}
+
+/* ---------- wider screens ---------- */
+@media (min-width:700px){
+  :root{--gutter:32px}
+  .brand svg{width:56px}
+  .brand b{font-size:1.4rem}
+  .tel{font-size:1.15rem}
+  .hero .btn{width:auto}
+  .groups{grid-template-columns:1fr 1fr;gap:56px}
+  .split{grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+  .steps{grid-template-columns:repeat(3,1fr);gap:32px}
+  .band{padding:80px 0 92px}
+  .close .lawn{height:280px}
+  .form .btn{width:auto;justify-self:start;padding:0 34px}
+}
+@media (min-width:1024px){
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;min-height:min(100svh,860px)}
+  .hero .top{grid-column:1/-1;max-width:none;padding-left:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)));padding-right:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))}
+  .hero-copy{align-self:center;max-width:none;margin:0;padding:24px 56px 80px max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))}
+  .hero h1{font-size:clamp(3.6rem,5.6vw,5.6rem)}
+  .hero .lawn{grid-row:2;grid-column:2;min-height:520px;border-top-left-radius:36px}
+  .close .lawn{height:320px}
+  .estimate .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:0 72px;align-items:start}
+  .estimate h2,.estimate .lede{grid-column:1}
+  .estimate form{grid-column:2;grid-row:1/span 3;margin-top:0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<!--
+DIRECTION CONTRACT
+THESIS: Orellana Works' own fall flyer, made real: a forest-green yard where the visitor does the fall cleanup themselves.
+OWN-WORLD: their logo's forest green, cream and gold trim; a mowed, striped lawn; maple, oak and elm leaves in rust, amber, gold and red. Never black.
+STORY: their slogan "Your property, our priority." -> sweep the leaves off a real lawn -> what we do (yard / build) -> how it works -> our work on Facebook, where we work -> free estimate by text -> "Quality work, affordable prices." on a second lawn.
+FIRST VIEWPORT (phone): header with logo mark and the tap-to-call number top-right; heavy uppercase slogan; one promise line; one gold "Get a free estimate" button; first-time discount line; the leaf-covered lawn starts right under it, already being blown clear.
+FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows with a single arrow cue; swaying grass/turf edges between sections; one shared animation loop.
+-->
+<header class="hero" id="top">
+  <div class="top">
+    <a class="brand" href="#top" aria-label="Orellana Works LLC, back to top">
+      <svg viewBox="0 0 80 54" aria-hidden="true">
+        <path d="M14 4 8 15h3.5L5 25h4.5L2 36h24l-7.5-11H23l-6.5-10H20z" fill="#5fae4e"/>
+        <path d="M64 6l-6 10h3.5l-6.5 9.5h4.5L52 36h24l-7.5-10.5H73L66.5 16H70z" fill="#4e9a40"/>
+        <path d="M4 42 40 10l36 32h-9.5L40 18.5 13.5 42z" fill="#f6f0e1"/>
+        <path d="M34 26h5v5h-5zm7 0h5v5h-5zm-7 7h5v5h-5zm7 0h5v5h-5z" fill="#f6f0e1"/>
+        <path d="M6 50q34-12 68 0-34-6-68 0z" fill="#5fae4e"/>
+        <path d="M58 9c4-7 12-8 16-8 0 7-5 14-15 13z" fill="#e2a93b"/>
+        <path d="M59 14c4-4 8-7 13-10" stroke="#173a26" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span><b>ORELLANA</b><small>WORKS LLC</small></span>
+    </a>
+    <a class="tel" href="tel:+19083562628"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>908-356-2628</a>
+  </div>
+  <div class="hero-copy">
+    <h1>Your property, our priority.</h1>
+    <p class="promise">We look after your yard and your home like they're our own, and every estimate is free.</p>
+    <a class="btn btn-gold" href="#estimate">Get a free estimate</a>
+    <p class="perk">New customers: ask about our <strong>first-time discount</strong>.</p>
+    <p class="hint" id="hint"><span class="finger">Sweep your finger across the leaves</span><span class="mouse">Run your mouse over the leaves</span></p>
+  </div>
+  <div class="lawn" id="lawn-hero"><canvas aria-label="A lawn covered in fallen leaves. Move across it to blow them away." role="img"></canvas></div>
+</header>
+
+<main>
+<svg class="edge" data-edge="turf" data-fill="#eef3e7" data-line="#cad6bf" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/><path class="line"/></svg>
+<section class="band" id="services" aria-labelledby="services-h">
+  <div class="wrap">
+    <h2 id="services-h">What we do</h2>
+    <div class="groups">
+      <div class="group">
+        <h3>Yard</h3>
+        <ul class="rows">
+          <li><a class="row" href="#estimate" data-service="Fall cleanup">Fall cleanups<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Landscaping">Landscaping<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Garden design">Garden design<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Tree trimming">Tree trimming<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Build</h3>
+        <ul class="rows">
+          <li><a class="row" href="#estimate" data-service="Concrete">Concrete<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Patio">Patios<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Deck">Decks<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Remodeling">Remodeling &amp; construction<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Flooring">Flooring<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="more">Something else on your property? <a href="#estimate" data-service="Other">Ask us.</a></p>
+  </div>
+</section>
+
+<svg class="edge" data-edge="grass" data-fill="#173a26" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/></svg>
+<section class="band dark" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <h2 id="how-h">How it works</h2>
+    <ol class="steps">
+      <li><h3>Tell us about the job</h3><p>Send the short form below or call. A photo of the yard or the space helps us see it.</p></li>
+      <li><h3>Get a free estimate</h3><p>You get a straight price before any work starts. No charge, no pressure.</p></li>
+      <li><h3>We get it done</h3><p>We do the work the way we'd want it done at our own house.</p></li>
+    </ol>
+  </div>
+</section>
+
+<svg class="edge" data-edge="turf" data-fill="#eef3e7" data-line="#cad6bf" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/><path class="line"/></svg>
+<section class="band" id="work" aria-labelledby="work-h">
+  <div class="wrap split">
+    <div>
+      <h2 id="work-h">See our work</h2>
+      <a class="fb" href="https://facebook.com/profile.php?id=61577158443400" rel="noopener">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a5 5 0 0 0-5 5v2H7v4h2v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg></span>
+        <span>Click to see more of our work.</span>
+        <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+    <div>
+      <h2>Where we work</h2>
+      <p class="area-line">Bound Brook, NJ and surrounding areas.</p>
+      <p class="note">Not sure you're close enough? Ask when you reach out.</p>
+    </div>
+  </div>
+</section>
+
+<svg class="edge" data-edge="grass" data-fill="#173a26" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/></svg>
+<section class="band dark estimate" id="estimate" aria-labelledby="estimate-h">
+  <div class="wrap">
+    <h2 id="estimate-h">Get a free estimate</h2>
+    <p class="lede">Tell us what you need and we'll get back to you. <strong>New customer? Ask about our first-time discount.</strong></p>
+    <form class="form" id="quote" novalidate>
+      <label class="f" id="f-name">Your name
+        <input type="text" name="name" autocomplete="name" placeholder="First and last name">
+        <span class="err">Please add your name so we know who's texting.</span>
+      </label>
+      <fieldset id="f-svc">
+        <legend>What do you need?</legend>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="svc" value="Fall cleanup"><span>Fall cleanup</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Landscaping"><span>Landscaping</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Garden design"><span>Garden design</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Tree trimming"><span>Tree trimming</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Concrete"><span>Concrete</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Patio"><span>Patio</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Deck"><span>Deck</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Remodeling"><span>Remodeling</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Flooring"><span>Flooring</span></label>
+          <label class="chip"><input type="checkbox" name="svc" value="Other"><span>Something else</span></label>
+        </div>
+        <span class="err">Pick at least one so we know what to look at.</span>
+      </fieldset>
+      <label class="f" id="f-where">Town or street
+        <input type="text" name="where" autocomplete="address-line1" placeholder="e.g. Bound Brook, or your street">
+        <span class="err">Add your town so we know where the job is.</span>
+      </label>
+      <label class="f">Details <em>(optional)</em>
+        <textarea name="notes" placeholder="Size of the yard, what you have in mind, best time to come by"></textarea>
+      </label>
+      <label class="check"><input type="checkbox" name="first"> This is my first time hiring Orellana Works</label>
+      <button class="btn btn-gold" type="submit">Text my request</button>
+      <p class="after">This opens your messages with your request filled in. Rather talk? Call <a href="tel:+19083562628">908-356-2628</a>.</p>
+      <p class="sent" id="sent" role="status">Your messages app should be open with your request. If it didn't open, call us at <a href="tel:+19083562628">908-356-2628</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <div class="wrap">
+    <h2 id="close-h">Quality work, affordable prices.</h2>
+    <p>Orellana Works LLC · Landscaping, construction, concrete.</p>
+  </div>
+  <div class="lawn" id="lawn-close"><canvas aria-label="Another lawn of fallen leaves to clear." role="img"></canvas></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>ORELLANA WORKS LLC</b>
+    <nav aria-label="Contact">
+      <a href="tel:+19083562628">908-356-2628</a>
+      <a href="https://facebook.com/profile.php?id=61577158443400" rel="noopener">Facebook</a>
+    </nav>
+    <small>Serving Bound Brook, NJ and surrounding areas.</small>
+  </div>
+</footer>
+
+<script>
+/* ---------- Leaf lawn: fallen leaves a finger or mouse blows clear ---------- */
+(function () {
+  var CFG = {
+    DPR_MAX: 1.5,
+    LEAF_PX_PHONE: 16, LEAF_PX_DESK: 22,   // average leaf size
+    COVER: 2.6,            // how many leaf-areas per patch of lawn (overlap)
+    MAX_LEAVES: 3400,
+    BLOW_R_PHONE: 62, BLOW_R_DESK: 88,     // blower radius
+    BLOW_FORCE: 2300,      // outward push (px/s^2 at the center)
+    CARRY: 0.9,            // share of pointer velocity given to leaves
+    LIFT: 260,             // upward kick so leaves tumble
+    GRAVITY: 520,
+    GROUND_DRAG: 7.5, AIR_DRAG: 0.9,
+    REFILL_PER_SEC: 12,     // blown-off leaves float back down this fast
+    FALL_SPEED: 46,
+    GUST_EVERY: [5, 9],    // seconds between gusts
+    AUTOPLAY_IDLE: 5,      // seconds without input before the lawn sweeps itself
+    COLORS: ['#c8501e', '#e0782a', '#e9a23b', '#b8321f', '#8a3b1a', '#d6b13a', '#a5531f', '#cf6a2c']
+  };
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ----- leaf sprites (drawn once) -----
+  function leafPath(type) {
+    var p = new Path2D(), i, t, x, y, n = 64;
+    if (type === 0) { // maple
+      var pts = [[0,.92],[.07,.5],[.5,.72],[.42,.42],[.92,.18],[.72,.05],[.88,-.36],[.46,-.22],[.42,-.6],[.16,-.38],[0,-1]];
+      p.moveTo(0, .92);
+      for (i = 1; i < pts.length; i++) p.lineTo(pts[i][0], pts[i][1]);
+      for (i = pts.length - 2; i >= 0; i--) p.lineTo(-pts[i][0], pts[i][1]);
+    } else if (type === 1) { // oak
+      for (i = 0; i <= n; i++) {
+        t = i / n * Math.PI * 2;
+        var lobe = 1 + .22 * Math.abs(Math.sin(t * 3.5));
+        x = .5 * Math.sin(t) * lobe * (1 - .12 * Math.cos(t)); y = -Math.cos(t) * .95;
+        i ? p.lineTo(x, y) : p.moveTo(x, y);
+      }
+    } else { // elm
+      for (i = 0; i <= n; i++) {
+        t = i / n * Math.PI * 2;
+        var ser = 1 + .05 * Math.sin(t * 26);
+        x = .5 * Math.sin(t) * (1 - .32 * Math.cos(t)) * ser; y = -Math.cos(t);
+        i ? p.lineTo(x, y) : p.moveTo(x, y);
+      }
+    }
+    p.closePath();
+    return p;
+  }
+  function shade(hex, k) {
+    var n = parseInt(hex.slice(1), 16), r = n >> 16, g = n >> 8 & 255, b = n & 255;
+    function c(v) { return Math.max(0, Math.min(255, Math.round(v * k))); }
+    return 'rgb(' + c(r) + ',' + c(g) + ',' + c(b) + ')';
+  }
+  var SPR = 48, sprites = [], shadows = [];
+  (function makeSprites() {
+    for (var type = 0; type < 3; type++) {
+      var path = leafPath(type);
+      var sh = document.createElement('canvas'); sh.width = sh.height = SPR;
+      var sx = sh.getContext('2d'); sx.translate(SPR / 2, SPR / 2); sx.scale(SPR * .42, SPR * .42);
+      sx.fillStyle = 'rgba(20,40,16,.42)'; sx.fill(path); shadows.push(sh);
+      for (var c = 0; c < CFG.COLORS.length; c++) for (var d = 0; d < 2; d++) {
+        var cv = document.createElement('canvas'); cv.width = cv.height = SPR;
+        var x = cv.getContext('2d'); x.translate(SPR / 2, SPR / 2); x.scale(SPR * .42, SPR * .42);
+        var k = d ? .78 : 1, base = CFG.COLORS[c];
+        var g = x.createLinearGradient(-.6, -1, .6, 1);
+        g.addColorStop(0, shade(base, k * 1.12)); g.addColorStop(1, shade(base, k * .82));
+        x.fillStyle = g; x.fill(path);
+        x.strokeStyle = shade(base, k * .62); x.lineWidth = .045; x.lineCap = 'round';
+        x.beginPath(); x.moveTo(0, 1.15); x.lineTo(0, -.8); x.stroke();          // stem + midrib
+        if (type !== 2) { x.beginPath(); x.moveTo(0, .3); x.lineTo(.42, -.12); x.moveTo(0, .3); x.lineTo(-.42, -.12); x.stroke(); }
+        sprites.push({ img: cv, type: type });
+      }
+    }
+  })();
+  var PER_TYPE = CFG.COLORS.length * 2;
+
+  // ----- lawn texture (drawn per size) -----
+  function paintLawn(w, h, dpr) {
+    var cv = document.createElement('canvas'); cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+    var x = cv.getContext('2d'); x.scale(dpr, dpr);
+    var g = x.createLinearGradient(0, 0, 0, h); g.addColorStop(0, '#5a9741'); g.addColorStop(1, '#3e732f');
+    x.fillStyle = g; x.fillRect(0, 0, w, h);
+    var band = Math.max(70, w / 9);
+    x.save(); x.translate(w / 2, h / 2); x.rotate(-.18);
+    for (var i = -12; i < 12; i++) { if (i % 2) continue; x.fillStyle = 'rgba(255,255,210,.07)'; x.fillRect(i * band, -h * 2, band, h * 4); }
+    x.restore();
+    var blades = Math.min(9000, w * h / 28);
+    for (i = 0; i < blades; i++) {
+      var bx = Math.random() * w, by = Math.random() * h, len = 3 + Math.random() * 5;
+      var l = Math.random();
+      x.strokeStyle = l < .5 ? 'rgba(30,70,24,.35)' : (l < .85 ? 'rgba(120,175,80,.35)' : 'rgba(170,205,110,.4)');
+      x.lineWidth = .8 + Math.random() * .6;
+      x.beginPath(); x.moveTo(bx, by); x.lineTo(bx + (Math.random() - .5) * 2.5, by - len); x.stroke();
+    }
+    return cv;
+  }
+
+  function Lawn(box, onTouched) {
+    var cv = box.querySelector('canvas'), ctx = cv.getContext('2d');
+    var W = 0, H = 0, dpr = 1, lawnImg = null, leaves = [], queue = [];
+    var phone = matchMedia('(max-width: 699px)').matches;
+    var pointer = { on: false, cx: 0, cy: 0, x: 0, y: 0, px: 0, py: 0, vx: 0, vy: 0, last: -99 };
+    var auto = { x: 0, y: 0, px: 0, py: 0 }, gust = null, nextGust = 3, spawnAcc = 0, visible = true, t0 = 0;
+
+    function newLeaf(x, y) {
+      var s = (phone ? CFG.LEAF_PX_PHONE : CFG.LEAF_PX_DESK) * (.7 + Math.random() * .6);
+      var type = Math.random() < .5 ? 0 : (Math.random() < .55 ? 1 : 2);
+      return { x: x, y: y, z: 0, vx: 0, vy: 0, vz: 0, rot: Math.random() * 6.283, vr: 0,
+        s: s, spr: type * PER_TYPE + ((Math.random() * CFG.COLORS.length) | 0) * 2 + (Math.random() < .35 ? 1 : 0),
+        squash: .72 + Math.random() * .28, flip: Math.random() * 6.283, ph: Math.random() * 6.283, out: false };
+    }
+    function size() {
+      var r = box.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
+      if (w === W && h === H) return;                         // address bar resizes: keep the scene
+      var oldW = W, oldH = H;
+      W = w; H = h; dpr = Math.min(window.devicePixelRatio || 1, CFG.DPR_MAX);
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+      lawnImg = paintLawn(W, H, dpr);
+      var leafPx = phone ? CFG.LEAF_PX_PHONE : CFG.LEAF_PX_DESK;
+      var want = Math.min(CFG.MAX_LEAVES, Math.round(W * H / (leafPx * leafPx * .55) * CFG.COVER * .55));
+      if (oldW) leaves.forEach(function (l) { l.x *= W / oldW; l.y *= H / oldH; });
+      while (leaves.length < want) leaves.push(newLeaf(Math.random() * W, Math.random() * H));
+      if (leaves.length > want) leaves.length = want;
+      if (reduce) draw(0);
+    }
+    function scene(e) { pointer.cx = e.clientX; pointer.cy = e.clientY; }
+    cv.addEventListener('pointerdown', function (e) { e.preventDefault(); pointer.on = true; scene(e); pointer.fresh = true; touched(); });
+    cv.addEventListener('pointermove', function (e) {
+      if (e.pointerType === 'mouse' || pointer.on) { if (!pointer.on) pointer.fresh = true; pointer.on = true; scene(e); touched(); }
+    });
+    function end(e) { if (e.pointerType !== 'mouse' || e.type === 'pointerleave') pointer.on = false; }
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (n) { cv.addEventListener(n, end); });
+    function touched() { pointer.last = performance.now() / 1000; onTouched && onTouched(); }
+
+    function blow(px, py, vx, vy, R, dt) {
+      var R2 = R * R;
+      for (var i = 0; i < leaves.length; i++) {
+        var l = leaves[i]; if (l.out) continue;
+        var dx = l.x - px, dy = l.y - py, d2 = dx * dx + dy * dy;
+        if (d2 > R2) continue;
+        var d = Math.sqrt(d2) || .001, f = 1 - d / R;
+        var jitter = .7 + Math.random() * .6;
+        l.vx += (dx / d * CFG.BLOW_FORCE * f + vx * CFG.CARRY * f * 9) * dt * jitter;
+        l.vy += (dy / d * CFG.BLOW_FORCE * f + vy * CFG.CARRY * f * 9) * dt * jitter;
+        if (l.z < 4) l.vz += CFG.LIFT * f * dt * 6 * Math.random();
+        l.vr += (Math.random() - .5) * 40 * f * dt * 6;
+      }
+    }
+    function step(t, dt) {
+      // pointer in scene coords, read every frame (the page scrolls under the finger)
+      var r = cv.getBoundingClientRect();
+      var real = pointer.on;
+      var idle = t - pointer.last > CFG.AUTOPLAY_IDLE;
+      if (real) {
+        pointer.x = pointer.cx - r.left; pointer.y = pointer.cy - r.top;
+        if (pointer.fresh) { pointer.px = pointer.x; pointer.py = pointer.y; pointer.fresh = false; }
+        pointer.vx = (pointer.x - pointer.px) / dt; pointer.vy = (pointer.y - pointer.py) / dt;
+        pointer.px = pointer.x; pointer.py = pointer.y;
+        blow(pointer.x, pointer.y, clampV(pointer.vx), clampV(pointer.vy), phone ? CFG.BLOW_R_PHONE : CFG.BLOW_R_DESK, dt);
+      } else if (idle) {
+        var at = (t - t0);
+        auto.x = W * (.5 + .44 * Math.sin(at * .37)); auto.y = H * (.52 + .34 * Math.sin(at * .81 + 1.3));
+        var avx = (auto.x - auto.px) / dt, avy = (auto.y - auto.py) / dt; auto.px = auto.x; auto.py = auto.y;
+        if (at > .3) blow(auto.x, auto.y, clampV(avx), clampV(avy), (phone ? CFG.BLOW_R_PHONE : CFG.BLOW_R_DESK) * .8, dt);
+      }
+      // gusts skitter the top layer across the lawn
+      if (t > nextGust && !gust) gust = { x: -140, dir: Math.random() < .5 ? 1 : -1 };
+      if (gust) {
+        gust.x += 330 * dt;
+        var gx = gust.dir > 0 ? gust.x : W - gust.x;
+        for (var g = 0; g < leaves.length; g++) {
+          var q = leaves[g]; if (q.out || Math.abs(q.x - gx) > 70 || ((g * 7) % 10) > 3) continue;
+          q.vx += gust.dir * 120 * dt * (1 + (g % 3)); q.vr += gust.dir * 4 * dt;
+          if ((g % 5) === 0 && q.z < 2) q.vz += 90 * dt;
+        }
+        if (gust.x > W + 140) { gust = null; nextGust = t + CFG.GUST_EVERY[0] + Math.random() * (CFG.GUST_EVERY[1] - CFG.GUST_EVERY[0]); }
+      }
+      var gd = Math.exp(-CFG.GROUND_DRAG * dt), ad = Math.exp(-CFG.AIR_DRAG * dt), rd = Math.exp(-2.5 * dt);
+      for (var i = 0; i < leaves.length; i++) {
+        var l = leaves[i];
+        if (l.out) continue;
+        if (l.falling) {
+          l.z -= CFG.FALL_SPEED * dt * (.8 + .4 * Math.sin(t * 1.3 + l.ph));
+          l.x += Math.sin(t * 1.9 + l.ph) * 34 * dt + 8 * dt;
+          l.rot += l.vr * dt; l.flip += 3.2 * dt;
+          if (l.z <= 0) { l.z = 0; l.falling = false; l.vr = 0; }
+          continue;
+        }
+        if (l.z > 0 || l.vz > 0) { l.vz -= CFG.GRAVITY * dt; l.z += l.vz * dt; l.flip += (4 + Math.abs(l.vx) * .02) * dt; if (l.z <= 0) { l.z = 0; l.vz = 0; } }
+        var dr = l.z > 0 ? ad : gd;
+        l.vx *= dr; l.vy *= dr; l.vr *= rd;
+        l.x += l.vx * dt; l.y += l.vy * dt; l.rot += l.vr * dt;
+        if (l.x < -24 || l.x > W + 24 || l.y < -24 || l.y > H + 24) { l.out = true; queue.push(l); }
+      }
+      // blown-off leaves drift back down
+      spawnAcc += CFG.REFILL_PER_SEC * dt * (W / 400);
+      while (spawnAcc >= 1 && queue.length) {
+        spawnAcc -= 1;
+        var n = queue.shift();
+        n.out = false; n.falling = true; n.x = Math.random() * W; n.y = H * (.08 + Math.random() * .9);
+        n.z = n.y + 30; n.vx = n.vy = n.vz = 0; n.vr = (Math.random() - .5) * 3;
+      }
+      if (spawnAcc > 3) spawnAcc = 3;
+    }
+    function clampV(v) { return Math.max(-1600, Math.min(1600, v)); }
+    function draw(t) {
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.drawImage(lawnImg, 0, 0);
+      var air = [];
+      for (var i = 0; i < leaves.length; i++) {
+        var l = leaves[i]; if (l.out) continue;
+        if (l.z > .5) { air.push(l); continue; }
+        var wob = reduce ? 0 : Math.sin(t * 2.6 + l.ph) * .035;
+        put(l, l.x, l.y, l.rot + wob, l.squash, 1, false);
+      }
+      for (i = 0; i < air.length; i++) {
+        var a = air[i], lift = Math.min(1, a.z / 120);
+        put(a, a.x + lift * 6, a.y + lift * 4, a.rot, Math.abs(Math.cos(a.flip)) * .8 + .2, 1, true);   // shadow
+        put(a, a.x, a.y - a.z, a.rot, Math.abs(Math.cos(a.flip)) * .85 + .15, 1 + lift * .25, false);
+      }
+    }
+    function put(l, x, y, rot, sq, scale, isShadow) {
+      var s = l.s * scale / (SPR * .84) * dpr, c = Math.cos(rot), sn = Math.sin(rot);
+      ctx.setTransform(c * s * sq, sn * s * sq, -sn * s, c * s, x * dpr, y * dpr);
+      ctx.drawImage(isShadow ? shadows[sprites[l.spr].type] : sprites[l.spr].img, -SPR / 2, -SPR / 2);
+    }
+    size();
+    window.addEventListener('resize', size);
+    if (!reduce && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(box);
+    return { step: step, draw: draw, size: size, visible: function () { return visible; },
+      start: function (t) { t0 = t; pointer.last = t - CFG.AUTOPLAY_IDLE + .8; nextGust = t + 3; } };
+  }
+
+  var hint = document.getElementById('hint'), hinted = false;
+  var lawns = [Lawn(document.getElementById('lawn-hero'), function () { if (!hinted) { hinted = true; hint.classList.add('gone'); } }),
+               Lawn(document.getElementById('lawn-close'))];
+  window.__lawns = lawns;
+  if (reduce) { lawns.forEach(function (l) { l.draw(0); }); return; }
+  var last = 0, started = false;
+  function frame(now) {
+    var t = now / 1000;
+    if (!started) { started = true; last = t; lawns.forEach(function (l) { l.start(t); }); }
+    var dt = Math.min(1 / 30, Math.max(1 / 240, t - last)); last = t;
+    for (var i = 0; i < lawns.length; i++) if (lawns[i].visible()) { lawns[i].step(t, dt); lawns[i].draw(t); }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* ---------- Section edges: rolling turf and swaying grass ---------- */
+(function () {
+  var TURF_SPEED = 1.1, GRASS_SPEED = 1.6, BLADE_GAP = 11;
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var edges = [].slice.call(document.querySelectorAll('.edge')).map(function (svg) {
+    var e = { svg: svg, kind: svg.dataset.edge, fill: svg.querySelector('.fill'), line: svg.querySelector('.line'), on: true, seed: Math.random() * 10 };
+    e.fill.setAttribute('fill', svg.dataset.fill);
+    if (e.line) e.line.setAttribute('stroke', svg.dataset.line);
+    return e;
+  });
+  function turf(e, t) {
+    var d = 'M0 46 ', l = '', s = e.seed;
+    for (var x = 0; x <= 1440; x += 24) {
+      var y = 24 + Math.sin(x * .004 + t * TURF_SPEED * .6 + s) * 7 + Math.sin(x * .011 - t * TURF_SPEED + s * 2) * 4 + Math.sin(x * .023 + t * TURF_SPEED * 1.7) * 1.6;
+      d += 'L' + x + ' ' + y.toFixed(1) + ' '; l += (x ? 'L' : 'M') + x + ' ' + (y - 5).toFixed(1) + ' ';
+    }
+    e.fill.setAttribute('d', d + 'L1440 46Z');
+    e.line.setAttribute('d', l);
+  }
+  function grass(e, t) {
+    var d = 'M0 46 L0 40 ', s = e.seed;
+    for (var x = 0, i = 0; x <= 1440; x += BLADE_GAP, i++) {
+      var h = 14 + ((i * 37) % 23) + Math.sin(i * 1.7 + s) * 5;
+      var sway = Math.sin(t * GRASS_SPEED + x * .006 + s) * 5 + Math.sin(t * GRASS_SPEED * 1.9 + i) * 1.8;
+      var base = 40 + Math.sin(x * .005 + s) * 2;
+      d += 'L' + x + ' ' + base.toFixed(1) + ' Q' + (x + 2 + sway * .4).toFixed(1) + ' ' + (base - h * .5).toFixed(1) + ' ' + (x + 4 + sway).toFixed(1) + ' ' + (base - h).toFixed(1) +
+           ' Q' + (x + 5 + sway * .4).toFixed(1) + ' ' + (base - h * .45).toFixed(1) + ' ' + (x + BLADE_GAP * .8).toFixed(1) + ' ' + base.toFixed(1) + ' ';
+    }
+    e.fill.setAttribute('d', d + 'L1440 40 L1440 46Z');
+  }
+  function paint(t) { edges.forEach(function (e) { if (e.on) (e.kind === 'turf' ? turf : grass)(e, t); }); }
+  paint(0);
+  if (reduce) return;
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (en) { edges.forEach(function (e) { if (e.svg === en.target) e.on = en.isIntersecting; }); }); });
+    edges.forEach(function (e) { io.observe(e.svg); });
+  }
+  (function loop(now) { paint(now / 1000); requestAnimationFrame(loop); })(0);
+})();
+
+/* ---------- Estimate form: compose a text message ---------- */
+(function () {
+  var PHONE = '+19083562628';
+  var form = document.getElementById('quote');
+  document.querySelectorAll('[data-service]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var box = form.querySelector('input[name=svc][value="' + a.dataset.service + '"]');
+      if (box) box.checked = true;
+    });
+  });
+  function mark(id, bad) { document.getElementById(id).classList.toggle('bad', bad); }
+  form.addEventListener('change', function () { if (form.dataset.tried) check(); });
+  form.addEventListener('input', function () { if (form.dataset.tried) check(); });
+  function check() {
+    var name = form.name.value.trim(), where = form.where.value.trim();
+    var svc = [].slice.call(form.querySelectorAll('input[name=svc]:checked')).map(function (c) { return c.value; });
+    mark('f-name', !name); mark('f-svc', !svc.length); mark('f-where', !where);
+    return name && svc.length && where ? { name: name, svc: svc, where: where } : null;
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); form.dataset.tried = '1';
+    var v = check();
+    if (!v) { var first = form.querySelector('.bad input'); if (first) first.focus(); return; }
+    var lines = ['Hi Orellana Works! I\'d like a free estimate.', 'Name: ' + v.name, 'Service: ' + v.svc.join(', '), 'Where: ' + v.where];
+    var notes = form.notes.value.trim(); if (notes) lines.push('Details: ' + notes);
+    if (form.first.checked) lines.push('First time hiring you. Is there a first-time discount?');
+    var href = 'sms:' + PHONE + '?&body=' + encodeURIComponent(lines.join('\n'));
+    document.getElementById('sent').classList.add('on');
+    window.__lastSms = href;
+    window.location.href = href;
+  });
+})();
+</script>
+</body>
+</html>
