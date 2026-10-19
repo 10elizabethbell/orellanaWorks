@@ -52,18 +52,19 @@ p{margin:0}
 .hero{position:relative;background:var(--forest);color:var(--cream);display:flex;flex-direction:column;min-height:min(100svh,940px)}
 .hero-copy{padding:18px var(--gutter) 18px;max-width:var(--max);margin:0 auto;width:100%}
 .hero h1{font-size:clamp(2.55rem,11.2vw,5.6rem);max-width:11ch}
-.promise{margin-top:16px;font-size:clamp(1.05rem,4.4vw,1.25rem);line-height:1.45;color:var(--cream-soft);max-width:34ch}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:800 1.05rem/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s}
+.promise{margin-top:16px;font-size:1.375rem;line-height:1.45;color:var(--cream-soft);max-width:34ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:800 1.0625rem/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s}
 .btn:active{transform:translateY(1px)}
 .btn-gold{background:var(--gold);color:var(--forest);border-color:var(--gold)}
 .btn-gold:hover{background:#efbd57;border-color:#efbd57}
 .hero .btn{margin-top:22px;width:100%}
-.perk{margin-top:12px;font-size:.95rem;color:var(--cream-soft)}
+.perk{margin-top:12px;font-size:.875rem;color:var(--cream-soft)}
 .perk strong{color:var(--gold);font-weight:800}
-.hint{margin-top:18px;font-size:.85rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--lime);transition:opacity .6s}
+.hint{margin-top:18px;font-size:.875rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--lime);transition:opacity .6s}
 .hint .mouse{display:none}
 @media (hover:hover) and (pointer:fine){.hint .finger{display:none}.hint .mouse{display:inline}}
 .hint.gone{opacity:0}
+@media (prefers-reduced-motion:reduce){.hint{display:none}}
 .lawn{position:relative;flex:1 1 auto;min-height:250px;background:var(--lawn) radial-gradient(120% 90% at 50% 0%,#5f9a45 0%,#4a8236 60%,#3f7430 100%)}
 .lawn canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:crosshair}
 
@@ -80,9 +81,9 @@ section{position:relative}
 
 /* services */
 .groups{display:grid;gap:34px;margin-top:28px}
-.group h3{font-size:.95rem;letter-spacing:.14em;color:var(--leaf-ink);margin-bottom:6px}
+.group h3{font-size:.875rem;letter-spacing:.14em;color:var(--leaf-ink);margin-bottom:6px}
 .rows{list-style:none;margin:0;padding:0}
-.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:6px 0;border-bottom:1px solid #cad6bf;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.2rem}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:6px 0;border-bottom:1px solid #cad6bf;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.375rem}
 .rows li:first-child .row{border-top:1px solid #cad6bf}
 .arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--paper-2);color:var(--ink);transition:background-color .2s,color .2s}
 .arrow svg{width:20px;height:20px}
@@ -91,36 +92,35 @@ section{position:relative}
 .row:focus-visible .arrow{outline:3px solid var(--leaf);outline-offset:3px}
 .more{margin-top:26px;color:var(--ink-soft)}
 .more a{font-weight:800;color:var(--ink)}
+.more a,.after a{display:inline-block;padding:12px 0;margin:-12px 0}
 
 /* how it works */
 .steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;counter-increment:s}
-.steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--forest-3);color:var(--gold);font-weight:900;font-size:1.4rem}
-.steps h3{font-size:1.35rem;align-self:end;line-height:1.05}
-.steps p{color:var(--cream-soft);max-width:44ch}
+.steps li::before{content:counter(s);grid-row:1;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--forest-3);color:var(--gold);font-weight:900;font-size:1.4rem}
+.steps h3{font-size:1.375rem;align-self:center;line-height:1.05}
+.steps p{grid-column:2;color:var(--cream-soft);max-width:44ch}
 
 /* work + area */
 .split{display:grid;gap:44px}
-.fb{display:flex;align-items:center;gap:16px;margin-top:24px;padding:18px 20px;min-height:76px;border-radius:var(--radius);background:var(--forest);color:var(--cream);text-decoration:none;box-shadow:0 10px 24px -12px rgba(23,58,38,.55);transition:background-color .2s,transform .2s}
+.fb{display:flex;align-items:center;gap:16px;margin-top:24px;padding:18px 20px;min-height:76px;border-radius:var(--radius);background:var(--forest);color:var(--cream);text-decoration:none;transition:background-color .2s,transform .2s}
 .fb:hover{background:var(--forest-3)}
 .fb:active{transform:translateY(1px)}
 .fb .ic{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1877f2}
 .fb .ic svg{width:22px;height:22px;fill:#fff}
-.fb span{font-weight:800;font-size:1.12rem;line-height:1.25}
+.fb span{font-weight:800;font-size:1.375rem;line-height:1.25}
 .fb .arrow{margin-left:auto;background:var(--forest-3);color:var(--cream)}
 .fb:hover .arrow{background:var(--gold);color:var(--forest)}
 .note{margin-top:14px;color:var(--ink-soft);max-width:46ch}
-.area-line{margin-top:22px;font-size:1.3rem;font-weight:800;line-height:1.3}
+.area-line{margin-top:22px;font-size:1.375rem;font-weight:800;line-height:1.3}
 
 /* estimate form */
-.estimate .lede{margin-top:14px;color:var(--cream-soft);max-width:44ch}
-.estimate .lede strong{color:var(--gold)}
 form{margin-top:28px;display:grid;gap:22px;max-width:640px}
 label.f{display:grid;gap:8px;font-weight:800}
 label.f em{font-style:normal;font-weight:500;color:var(--cream-soft)}
 input[type=text],input[type=tel],textarea{width:100%;font:500 1rem/1.4 var(--sans);color:var(--ink);background:var(--cream);border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:52px;transition:border-color .15s,box-shadow .15s}
 textarea{min-height:110px;resize:vertical}
-input::placeholder,textarea::placeholder{color:#6b7a6d}
+input::placeholder,textarea::placeholder{color:#5a685c}
 input:hover,textarea:hover,input:focus,textarea:focus{outline:none;border-color:var(--lime)}
 input:focus,textarea:focus{outline:2px solid var(--lime);outline-offset:2px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
@@ -136,13 +136,13 @@ legend{font-weight:800;padding:0;margin-bottom:10px}
 .check{display:flex;align-items:center;gap:12px;min-height:44px;font-weight:600;cursor:pointer}
 .check input{width:24px;height:24px;margin:0;flex:none;accent-color:var(--gold);cursor:pointer;border-radius:6px}
 .check:hover input,.check input:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
-.err{display:none;color:#ffc9b5;font-weight:700;font-size:.95rem}
+.err{display:none;color:#ffc9b5;font-weight:700;font-size:.875rem}
 .bad .err{display:block}
 .bad input,.bad .chips{border-radius:12px}
 .bad input{border-color:#ff9b7a}
 .form .btn{width:100%;border-color:var(--gold)}
 .form .btn:hover,.form .btn:focus-visible{border-color:var(--lime);outline:2px solid var(--lime);outline-offset:2px}
-.after{color:var(--cream-soft);font-size:.98rem}
+.after{color:var(--cream-soft);font-size:.875rem}
 .after a{color:var(--cream);font-weight:800;white-space:nowrap}
 .sent{display:none;padding:14px 16px;border-radius:12px;background:var(--forest-2);color:var(--cream)}
 .sent.on{display:block}
@@ -153,20 +153,21 @@ legend{font-weight:800;padding:0;margin-bottom:10px}
 .close h2{font-size:clamp(2.2rem,9.5vw,4.2rem);max-width:12ch}
 .close p{margin-top:14px;color:var(--cream-soft)}
 .close .lawn{min-height:220px;flex:none;height:230px}
+#lawn-close canvas{touch-action:pan-y}
 footer{background:var(--forest-2);color:var(--cream);padding:30px 0 calc(34px + env(safe-area-inset-bottom))}
 footer .wrap{display:grid;gap:14px}
-footer b{font-size:1.05rem;font-weight:900;letter-spacing:.02em}
+footer b{font-size:1.0625rem;font-weight:900;letter-spacing:.02em}
 footer nav{display:flex;flex-wrap:wrap;gap:4px 24px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--cream);font-weight:700}
 footer a:hover{color:var(--gold)}
-footer small{color:var(--cream-soft);font-size:.85rem}
+footer small{color:var(--cream-soft);font-size:.875rem}
 
 /* ---------- wider screens ---------- */
 @media (min-width:700px){
   :root{--gutter:32px}
   .brand svg{width:56px}
   .brand b{font-size:1.4rem}
-  .tel{font-size:1.15rem}
+  .tel{font-size:1.0625rem}
   .hero .btn{width:auto}
   .groups{grid-template-columns:1fr 1fr;gap:56px}
   .split{grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
@@ -176,17 +177,17 @@ footer small{color:var(--cream-soft);font-size:.85rem}
   .form .btn{width:auto;justify-self:start;padding:0 34px}
 }
 @media (min-width:1024px){
-  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;min-height:min(100svh,860px)}
+  .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-rows:auto 1fr;min-height:min(100svh,860px)}
   .hero .top{grid-column:1/-1;max-width:none;padding-left:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)));padding-right:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))}
   .hero-copy{align-self:center;max-width:none;margin:0;padding:24px 56px 80px max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))}
-  .hero h1{font-size:clamp(3.6rem,5.6vw,5.6rem)}
-  .hero .lawn{grid-row:2;grid-column:2;min-height:520px;border-top-left-radius:36px}
+  .hero h1{font-size:clamp(3.2rem,4.2vw,4.75rem);max-width:none}
+  .hero .lawn{grid-row:2;grid-column:2;min-height:520px;border-top-left-radius:36px;overflow:hidden}
   .close .lawn{height:320px}
   .estimate .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:0 72px;align-items:start}
-  .estimate h2,.estimate .lede{grid-column:1}
-  .estimate form{grid-column:2;grid-row:1/span 3;margin-top:0}
+  .estimate h2{grid-column:1;position:sticky;top:40px}
+  .estimate form{grid-column:2;grid-row:1;margin-top:0}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:active,.fb:active{transform:none}}
 </style>
 </head>
 <body>
@@ -259,7 +260,7 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
   <div class="wrap">
     <h2 id="how-h">How it works</h2>
     <ol class="steps">
-      <li><h3>Tell us about the job</h3><p>Send the short form below or call. A photo of the yard or the space helps us see it.</p></li>
+      <li><h3>Tell us about the job</h3><p>Send the short form below. A photo of the yard or the space helps us see it.</p></li>
       <li><h3>Get a free estimate</h3><p>You get a straight price before any work starts. No charge, no pressure.</p></li>
       <li><h3>We get it done</h3><p>We do the work the way we'd want it done at our own house.</p></li>
     </ol>
@@ -289,11 +290,10 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
 <section class="band dark estimate" id="estimate" aria-labelledby="estimate-h">
   <div class="wrap">
     <h2 id="estimate-h">Get a free estimate</h2>
-    <p class="lede">Tell us what you need and we'll get back to you. <strong>New customer? Ask about our first-time discount.</strong></p>
     <form class="form" id="quote" novalidate>
       <label class="f" id="f-name">Your name
         <input type="text" name="name" autocomplete="name" placeholder="First and last name">
-        <span class="err">Please add your name so we know who's texting.</span>
+        <span class="err" aria-live="polite">Please add your name so we know who's texting.</span>
       </label>
       <fieldset id="f-svc">
         <legend>What do you need?</legend>
@@ -309,19 +309,19 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
           <label class="chip"><input type="checkbox" name="svc" value="Flooring"><span>Flooring</span></label>
           <label class="chip"><input type="checkbox" name="svc" value="Other"><span>Something else</span></label>
         </div>
-        <span class="err">Pick at least one so we know what to look at.</span>
+        <span class="err" aria-live="polite">Pick at least one so we know what to look at.</span>
       </fieldset>
       <label class="f" id="f-where">Town or street
         <input type="text" name="where" autocomplete="address-line1" placeholder="e.g. Bound Brook, or your street">
-        <span class="err">Add your town so we know where the job is.</span>
+        <span class="err" aria-live="polite">Add your town so we know where the job is.</span>
       </label>
-      <label class="f">Details <em>(optional)</em>
+      <label class="f"><span>Details <em>(optional)</em></span>
         <textarea name="notes" placeholder="Size of the yard, what you have in mind, best time to come by"></textarea>
       </label>
       <label class="check"><input type="checkbox" name="first"> This is my first time hiring Orellana Works</label>
       <button class="btn btn-gold" type="submit">Text my request</button>
-      <p class="after">This opens your messages with your request filled in. Rather talk? Call <a href="tel:+19083562628">908-356-2628</a>.</p>
-      <p class="sent" id="sent" role="status">Your messages app should be open with your request. If it didn't open, call us at <a href="tel:+19083562628">908-356-2628</a>.</p>
+      <p class="after">This opens your messages with your request filled in. Rather talk? Call <a href="tel:+19083562628">908-356-2628</a></p>
+      <p class="sent" id="sent" role="status">Your text is ready. Just hit send. If nothing opened, call us at <a href="tel:+19083562628">908-356-2628</a></p>
     </form>
   </div>
 </section>
@@ -459,7 +459,7 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
     }
     function size() {
       var r = box.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
-      if (w === W && h === H) return;                         // address bar resizes: keep the scene
+      if (!w || !h || (w === W && h === H)) return;          // hidden, or address bar resizes: keep the scene
       var oldW = W, oldH = H;
       W = w; H = h; dpr = Math.min(window.devicePixelRatio || 1, CFG.DPR_MAX);
       cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
@@ -495,6 +495,7 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
       }
     }
     function step(t, dt) {
+      if (!W) return;
       // pointer in scene coords, read every frame (the page scrolls under the finger)
       var r = cv.getBoundingClientRect();
       var real = pointer.on;
@@ -552,6 +553,7 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
     }
     function clampV(v) { return Math.max(-1600, Math.min(1600, v)); }
     function draw(t) {
+      if (!lawnImg) return;
       ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.drawImage(lawnImg, 0, 0);
       var air = [];
@@ -573,7 +575,9 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
       ctx.drawImage(isShadow ? shadows[sprites[l.spr].type] : sprites[l.spr].img, -SPR / 2, -SPR / 2);
     }
     size();
-    window.addEventListener('resize', size);
+    var rq; function later() { cancelAnimationFrame(rq); rq = requestAnimationFrame(size); }
+    window.addEventListener('resize', later);
+    if ('ResizeObserver' in window) new ResizeObserver(later).observe(box);   // catches a late first layout
     if (!reduce && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(box);
     return { step: step, draw: draw, size: size, visible: function () { return visible; },
       start: function (t) { t0 = t; pointer.last = t - CFG.AUTOPLAY_IDLE + .8; nextGust = t + 3; } };
@@ -583,13 +587,15 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
   var lawns = [Lawn(document.getElementById('lawn-hero'), function () { if (!hinted) { hinted = true; hint.classList.add('gone'); } }),
                Lawn(document.getElementById('lawn-close'))];
   window.__lawns = lawns;
-  if (reduce) { lawns.forEach(function (l) { l.draw(0); }); return; }
+  lawns.forEach(function (l) { l.draw(0); });
+  if (reduce) return;
   var last = 0, started = false;
   function frame(now) {
     var t = now / 1000;
     if (!started) { started = true; last = t; lawns.forEach(function (l) { l.start(t); }); }
     var dt = Math.min(1 / 30, Math.max(1 / 240, t - last)); last = t;
     for (var i = 0; i < lawns.length; i++) if (lawns[i].visible()) { lawns[i].step(t, dt); lawns[i].draw(t); }
+    if (window.__edges) window.__edges(t);
     requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
@@ -597,33 +603,35 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
 
 /* ---------- Section edges: rolling turf and swaying grass ---------- */
 (function () {
-  var TURF_SPEED = 1.1, GRASS_SPEED = 1.6, BLADE_GAP = 11;
+  var TURF_SPEED = 1.1, GRASS_SPEED = 1.6, BLADE_GAP = 7;
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var edges = [].slice.call(document.querySelectorAll('.edge')).map(function (svg) {
-    var e = { svg: svg, kind: svg.dataset.edge, fill: svg.querySelector('.fill'), line: svg.querySelector('.line'), on: true, seed: Math.random() * 10 };
+    var e = { w: 0, svg: svg, kind: svg.dataset.edge, fill: svg.querySelector('.fill'), line: svg.querySelector('.line'), on: true, seed: Math.random() * 10 };
     e.fill.setAttribute('fill', svg.dataset.fill);
     if (e.line) e.line.setAttribute('stroke', svg.dataset.line);
     return e;
   });
+  function fit(e) { var w = Math.max(320, Math.round(e.svg.clientWidth || 1440)); if (w !== e.w) { e.w = w; e.svg.setAttribute('viewBox', '0 0 ' + w + ' 46'); } return w; }
   function turf(e, t) {
-    var d = 'M0 46 ', l = '', s = e.seed;
-    for (var x = 0; x <= 1440; x += 24) {
+    var W = fit(e), d = 'M0 46 ', l = '', s = e.seed;
+    for (var x = 0; x <= W + 24; x += 24) {
       var y = 24 + Math.sin(x * .004 + t * TURF_SPEED * .6 + s) * 7 + Math.sin(x * .011 - t * TURF_SPEED + s * 2) * 4 + Math.sin(x * .023 + t * TURF_SPEED * 1.7) * 1.6;
       d += 'L' + x + ' ' + y.toFixed(1) + ' '; l += (x ? 'L' : 'M') + x + ' ' + (y - 5).toFixed(1) + ' ';
     }
-    e.fill.setAttribute('d', d + 'L1440 46Z');
+    e.fill.setAttribute('d', d + 'L' + (W + 24) + ' 46Z');
     e.line.setAttribute('d', l);
   }
   function grass(e, t) {
-    var d = 'M0 46 L0 40 ', s = e.seed;
-    for (var x = 0, i = 0; x <= 1440; x += BLADE_GAP, i++) {
+    var W = fit(e), d = 'M0 46 L0 40 ', s = e.seed;
+    for (var x = 0, i = 0; x <= W; x += BLADE_GAP, i++) {
       var h = 14 + ((i * 37) % 23) + Math.sin(i * 1.7 + s) * 5;
-      var sway = Math.sin(t * GRASS_SPEED + x * .006 + s) * 5 + Math.sin(t * GRASS_SPEED * 1.9 + i) * 1.8;
+      var lean = Math.sin(i * 2.3 + s) * 4.5;   // each blade leans its own way
+      var sway = lean + Math.sin(t * GRASS_SPEED + x * .006 + s) * 5 + Math.sin(t * GRASS_SPEED * 1.9 + i) * 1.8;
       var base = 40 + Math.sin(x * .005 + s) * 2;
       d += 'L' + x + ' ' + base.toFixed(1) + ' Q' + (x + 2 + sway * .4).toFixed(1) + ' ' + (base - h * .5).toFixed(1) + ' ' + (x + 4 + sway).toFixed(1) + ' ' + (base - h).toFixed(1) +
            ' Q' + (x + 5 + sway * .4).toFixed(1) + ' ' + (base - h * .45).toFixed(1) + ' ' + (x + BLADE_GAP * .8).toFixed(1) + ' ' + base.toFixed(1) + ' ';
     }
-    e.fill.setAttribute('d', d + 'L1440 40 L1440 46Z');
+    e.fill.setAttribute('d', d + 'L' + (W + 12) + ' 40 L' + (W + 12) + ' 46Z');
   }
   function paint(t) { edges.forEach(function (e) { if (e.on) (e.kind === 'turf' ? turf : grass)(e, t); }); }
   paint(0);
@@ -632,7 +640,7 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
     var io = new IntersectionObserver(function (es) { es.forEach(function (en) { edges.forEach(function (e) { if (e.svg === en.target) e.on = en.isIntersecting; }); }); });
     edges.forEach(function (e) { io.observe(e.svg); });
   }
-  (function loop(now) { paint(now / 1000); requestAnimationFrame(loop); })(0);
+  window.__edges = paint;   // driven by the lawn's animation loop (one shared loop)
 })();
 
 /* ---------- Estimate form: compose a text message ---------- */
@@ -645,11 +653,11 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
       if (box) box.checked = true;
     });
   });
-  function mark(id, bad) { document.getElementById(id).classList.toggle('bad', bad); }
+  function mark(id, bad) { var el = document.getElementById(id); el.classList.toggle('bad', bad); var i = el.querySelector('input[type=text]'); if (i) i.setAttribute('aria-invalid', bad ? 'true' : 'false'); }
   form.addEventListener('change', function () { if (form.dataset.tried) check(); });
   form.addEventListener('input', function () { if (form.dataset.tried) check(); });
   function check() {
-    var name = form.name.value.trim(), where = form.where.value.trim();
+    var F = form.elements, name = F.name.value.trim(), where = F.where.value.trim();
     var svc = [].slice.call(form.querySelectorAll('input[name=svc]:checked')).map(function (c) { return c.value; });
     mark('f-name', !name); mark('f-svc', !svc.length); mark('f-where', !where);
     return name && svc.length && where ? { name: name, svc: svc, where: where } : null;
@@ -659,9 +667,9 @@ FORM: system sans, 900-weight uppercase display, plain sentence-case body; rows 
     var v = check();
     if (!v) { var first = form.querySelector('.bad input'); if (first) first.focus(); return; }
     var lines = ['Hi Orellana Works! I\'d like a free estimate.', 'Name: ' + v.name, 'Service: ' + v.svc.join(', '), 'Where: ' + v.where];
-    var notes = form.notes.value.trim(); if (notes) lines.push('Details: ' + notes);
-    if (form.first.checked) lines.push('First time hiring you. Is there a first-time discount?');
-    var href = 'sms:' + PHONE + '?&body=' + encodeURIComponent(lines.join('\n'));
+    var notes = form.elements.notes.value.trim(); if (notes) lines.push('Details: ' + notes);
+    if (form.elements.first.checked) lines.push('First time hiring you. Is there a first-time discount?');
+    var href = 'sms:' + PHONE + (/Android/i.test(navigator.userAgent) ? '?body=' : '?&body=') + encodeURIComponent(lines.join('\n'));
     document.getElementById('sent').classList.add('on');
     window.__lastSms = href;
     window.location.href = href;
